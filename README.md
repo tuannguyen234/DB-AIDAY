@@ -1,0 +1,2 @@
+!pip install pyngrok streamlit streamlit_option_menu -q
+!ngrok authtoken 2xzhdMYPV5RspS4HIzMIBmT4qn7_5wwEbJS9WVVdcgpWM2Rvj
