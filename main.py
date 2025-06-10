@@ -43,9 +43,9 @@ def get_customer(customer_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Customer not found")
     return customer
 
-@app.get("/gifts/", response_model=list[str])
+@app.get("/gifts/")
 def get_gifts(db: Session = Depends(get_db)):
-    gifts = db.query(Gift).all()
+    gift_list = db.query(Gift).all()
     # gift_list = [
     #     f"{gift.name}, {gift.price}, {gift.description}" for gift in gifts
     # ]
